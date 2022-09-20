@@ -1,0 +1,182 @@
+/* https://coolors.co/cecccc-9d6381-fdecef-0f110c-612940 
+
+#CECCCC
+#9D6381
+#FDECEF
+#0F110C
+#612940
+*/
+
+* {
+	color: #0F110C;
+	font-family: 'Jost', sans-serif;
+	font-size: 17px;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+
+nav {
+	background-color: #612940;
+}
+
+.navigation {
+	color: #CECCCC;
+}
+
+a.brand-logo, a.brand-logo.navigation {
+	color: #CECCCC;
+	padding: 0px 20px;
+	font-size: 25px;
+}
+
+nav .brand-logo {
+	position: relative;
+}
+
+nav i.material-icons.left, nav i.waves-effect.waves-light.material-icons.left {
+	color: #CECCCC;
+}
+
+/* TÍTULOS E SUBTÍTULOS */
+
+h1, h3, h5 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+h1 {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+}
+
+h5 {
+	padding: 50px 0 0 0;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+/* CONTAINERS */
+
+.detalhesEvento {
+	box-shadow: 0px 0px 5px grey;
+	border-radius: 5px;
+}
+
+.detalhesEvento div.row {
+	text-align: center;
+}
+
+.formEvento {
+	box-shadow: 0px 0px 5px grey;
+	padding: 50px 60px 30px 60px;
+	margin-bottom: 60px;
+	border-radius: 5px;
+}
+
+.row {
+	padding-top: 20px;
+	text-align: justify;
+}
+
+.formConvidado {
+	box-shadow: 0px 0px 5px grey;
+	padding: 50px 60px 30px 60px;
+	margin-bottom: 60px;
+	border-radius: 5px;
+}
+
+.tabelaConvidado {
+	width: 50%;
+	padding: 50px 60px 30px 60px;
+	margin-bottom: 60px;
+}
+
+/* TABELAS */
+
+table .material-icons {
+    display: inline-block;
+    width: 100%;
+}
+
+td i {
+    text-align: center;
+}
+
+th, td {
+	text-align: center;
+}
+
+/* BOTÕES */
+
+a.waves-effect.waves-light.btn, button.waves-effect.waves-light.btn, input.waves-effect.waves-light.btn, i.waves-effect.waves-light.btn.waves-input-wrapper  {
+	color: #CECCCC;
+	background: #9D6381;
+}
+
+input.waves-button-input {
+	color: #CECCCC;
+}
+
+input {
+	font-family: 'Jost', sans-serif;
+}
+
+button.waves-effect.waves-light.btn {
+	margin-top: 20px;
+}
+
+.login-btn {
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+ 	-ms-transform: translate(-50%, -70%);
+  	transform: translate(-50%, 1000%);
+}
+
+.index2 {
+	position: absolute;
+}
+
+#botao1 {
+	top: 50%;
+  	left: 50%;
+	-ms-transform: translate(-50%, -70%);
+  	transform: translate(-50%, 1000%);
+}
+
+#botao2 {
+	top: 50%;
+  	left: 48.5%;
+	-ms-transform: translate(-50%, -60%);
+  	transform: translate(-50%, 1000%);
+	margin: 60px 0 0 30px;
+}
+
+#botaoLogin {
+	margin-top: 10px;
+}
+
+/* MENSAGEM DE ALERTA */
+
+.alert {
+	background: #612940;
+	padding: 5px;
+	width: 400px;
+	margin-left: 400px;
+	margin-bottom: 7px;
+	border-radius: 100px;
+	box-shadow: 0px 0px 3px grey;
+	font-weight: 500;
+	text-align: center;
+}
+
+.alert span {
+	color: #CECCCC;
+	background: #612940;
+}

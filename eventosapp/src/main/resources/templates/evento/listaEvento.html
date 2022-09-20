@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style/styleCSS.css" />
+<title>EventosApp</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="nav-wrapper">
+				<ul class="logo">
+			<li>
+			<a href="/" class="brand-logo navigation">HOME</a></li>
+			<li>
+				<a href="/logout" class="brand-logo navigation">LOGOUT</a>
+			</li>
+			</ul>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="/cadastrarEvento" class="waves-effect waves-light btn"><i class="material-icons left">event</i>Cadastrar Evento</a>
+</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<h1>Lista de Eventos</h1>
+	<table class="container">
+		<thead>
+			<th>Nome</th>
+			<th>Local</th>
+			<th>Data</th>
+			<th>Horário</th>
+			<th>Deletar</th>
+			<th>Editar</th>
+		</thead>
+		<tbody>
+			<tr th:each="evento:${leventos}">
+				<td><a
+					th:href="${(#mvc.url('EC#detalhesEvento').arg(0, evento.codigo)).build()}"><span
+						th:text="${evento.nome}"></span></a></td>
+				<td><span th:text="${evento.local}"></span></td>
+				<td><span th:text="${evento.data}"></span></td>
+				<td><span th:text="${evento.horario}"></span></td>
+				<td><a
+					th:href="${(#mvc.url('EC#deletarEvento').arg(0, evento.codigo)).build()}"><i
+						class="material-icons left">delete</i></a></td>
+						<td><a
+					th:href="${(#mvc.url('EC#editarEvento').arg(0, evento.codigo)).build()}"><i
+						class="material-icons left">edit</i></a></td>
+			</tr>
+		</tbody>
+	</table>	
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+</html>

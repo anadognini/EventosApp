@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+<meta charset=UTF-8 name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- ------------------------ -->
+<link rel="stylesheet" href="style/styleCSS.css" />
+<title>Evento</title>
+</head>
+<body>
+		<!-- ------------------------ BARRA DE NAVEGAÇÃO TOPO DA PÁGINA ------------------------ -->
+<header>
+		<nav>
+			<div class="nav-wrapper">
+			<ul class="logo">
+			<li>
+			<a href="/" class="brand-logo navigation">HOME</a></li>
+			</ul>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="/cadastrarEvento" class="waves-effect waves-light btn"><i class="material-icons left">event</i>Cadastrar Evento</a>
+</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+<h5>Faça seu login para acessar o sistema de cadastro de eventos</h5>
+
+<div class="container">
+
+<form method="post">
+<div><b>Username:</b> <input type="text" value="" name="username" /></div>
+<div><b>Password:</b> <input type="password" value="" name="password" /></div>
+<div><a href="/home"> <input class="waves-effect waves-light btn" id="botaoLogin" type="submit" value="Acessar"></a></div>
+</form>
+</div>
+
+</body>
+</html>

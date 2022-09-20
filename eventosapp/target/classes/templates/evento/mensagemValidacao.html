@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://thymeleaf.org">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style/styleCSS.css" />
+<title>Insert title here</title>
+</head>
+<body>
+<div class="alert alert-success alert-dismissible" role="alert" th:if="${not #strings.isEmpty(mensagem)}">
+<div class="container"><span th:text="${mensagem}"></span></div>
+</div>
+</body>
+</html>

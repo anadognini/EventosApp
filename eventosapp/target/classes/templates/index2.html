@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<link
+	href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&family=Jost:wght@300;400&display=swap"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet" />
+<link type="text/css" rel="stylesheet"
+	href="materialize/css/materialize.min.css" media="screen,projection" />
+<meta charset=UTF-8 name="viewport"
+	content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style/styleCSS.css" />
+<link rel="stylesheet" href="style/loginCSS.css" />
+
+<title>EventosApp</title>
+
+</head>
+
+<body>
+	<!-- ------------------------ BARRA DE NAVEGAÇÃO TOPO DA PÁGINA ------------------------ -->
+	<header>
+		<nav>
+			<div class="nav-wrapper">
+				<ul class="logo">
+			<li>
+			<a href="/" class="brand-logo navigation">HOME</a></li>
+			<li>
+				<a href="/logout" class="brand-logo navigation">LOGOUT</a>
+			</li>
+			</ul>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><i
+							class="material-icons left navigation">event_note</i></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<h1>Bem-vindo ao EventosApp!</h1>
+	<h3>Você deve ser administrador para poder cadastrar seus eventos e suas listas de convidados.</h3>
+			<div class="login-btn index2" id="botao1"><a href="/eventos"> <input class="waves-effect waves-light btn"  type="submit" value="Acessar lista de eventos"></a></div>
+			<div class="login-btn index2" id="botao2"><a href="/cadastrarEvento"> <input class="waves-effect waves-light btn"  type="submit" value="Cadastrar evento"></a></div>
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+</html>
